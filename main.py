@@ -1,5 +1,17 @@
-from window import Window
+import sys
+from PyQt5 import *
+from autorisation import *
 
-window = Window(1000, 600, "Human Resources Department")
-window.create_child(400, 400, "Autorisation")
-window.run()
+
+class Interface(QtWidgets.QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.ui = Ui_Form()
+        self.ui.setupUi(self)
+
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    mywin = Interface()
+    mywin.show()
+    sys.exit(app.exec_())
