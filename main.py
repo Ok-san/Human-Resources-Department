@@ -1,3 +1,4 @@
+from mainwindow import Ui_MainWindow
 import sys
 from PyQt5 import *
 from autorisation import *
