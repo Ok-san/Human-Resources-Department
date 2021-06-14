@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_AutorisationWindow(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(446, 414)
@@ -13,7 +13,7 @@ class Ui_Form(object):
                            "}")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(
-            "D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            "./icon/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form.setWindowIcon(icon)
         Form.setAutoFillBackground(False)
         Form.setStyleSheet("")
@@ -87,7 +87,7 @@ class Ui_Form(object):
         self.pushButton_2.setText("")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(
-            "D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/person-icon-1671.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            "./icon/person-icon-1671.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon1)
         self.pushButton_2.setIconSize(QtCore.QSize(60, 60))
         self.pushButton_2.setObjectName("pushButton_2")

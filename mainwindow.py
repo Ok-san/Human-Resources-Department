@@ -15,19 +15,21 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1271, 714)
-        MainWindow.setMaximumSize(QtCore.QSize(1284, 714))
+        MainWindow.setMaximumSize(QtCore.QSize(1271, 714))
+        MainWindow.setMinimumSize(QtCore.QSize(1271, 714))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(
+            "D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("*{\n"
-"background: #333;\n"
-"color: #333;\n"
-"}\n"
-"QPushButton{\n"
-"border-radius: 10px;\n"
-"font-size: 17px;\n"
-"font-weight: 500;\n"
-"}")
+                                 "background: #333;\n"
+                                 "color: #333;\n"
+                                 "}\n"
+                                 "QPushButton{\n"
+                                 "border-radius: 10px;\n"
+                                 "font-size: 17px;\n"
+                                 "font-weight: 500;\n"
+                                 "}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
@@ -40,39 +42,39 @@ class Ui_MainWindow(object):
         self.tabWidget.setFont(font)
         self.tabWidget.setAutoFillBackground(False)
         self.tabWidget.setStyleSheet("*{\n"
-"background: #333;\n"
-"color: #ebebeb;\n"
-"}\n"
-"\n"
-" \n"
-" \n"
-"QWidget{\n"
-"border: none;\n"
-"background-color:#333;\n"
-"color: #333;\n"
-"}\n"
-" QPushButton{\n"
-"background: #ebebeb;\n"
-"color: #333;\n"
-"border-radius: 10px;\n"
-"}\n"
-"QLineEdit{\n"
-"background: #ebebeb;\n"
-"color: #333;\n"
-"font-size: 20px;\n"
-"border-radius: 10px;\n"
-"}\n"
-"QGroupBox{\n"
-"color: #ebebeb;\n"
-"\n"
-"\n"
-"}\n"
-"QTableWidget{\n"
-"background: #ebebeb;\n"
-"color: #333;\n"
-"font-size: 20px;\n"
-"border-radius: 10px;\n"
-"}")
+                                     "background: #333;\n"
+                                     "color: #ebebeb;\n"
+                                     "}\n"
+                                     "\n"
+                                     " \n"
+                                     " \n"
+                                     "QWidget{\n"
+                                     "border: none;\n"
+                                     "background-color:#333;\n"
+                                     "color: #333;\n"
+                                     "}\n"
+                                     " QPushButton{\n"
+                                     "background: #ebebeb;\n"
+                                     "color: #333;\n"
+                                     "border-radius: 10px;\n"
+                                     "}\n"
+                                     "QLineEdit{\n"
+                                     "background: #ebebeb;\n"
+                                     "color: #333;\n"
+                                     "font-size: 20px;\n"
+                                     "border-radius: 10px;\n"
+                                     "}\n"
+                                     "QGroupBox{\n"
+                                     "color: #ebebeb;\n"
+                                     "\n"
+                                     "\n"
+                                     "}\n"
+                                     "QTableWidget{\n"
+                                     "background: #ebebeb;\n"
+                                     "color: #333;\n"
+                                     "font-size: 20px;\n"
+                                     "border-radius: 10px;\n"
+                                     "}")
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget.setUsesScrollButtons(True)
         self.tabWidget.setDocumentMode(True)
@@ -83,7 +85,8 @@ class Ui_MainWindow(object):
         self.pushSearch.setGeometry(QtCore.QRect(830, 60, 41, 41))
         self.pushSearch.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/searchmagnifierinterfacesymbol1_79893.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(
+            "D:/Учеба/Методы и средства проектирования ИСиТ/Human-Resources-Department/icon/searchmagnifierinterfacesymbol1_79893.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushSearch.setIcon(icon1)
         self.pushSearch.setObjectName("pushSearch")
         self.tableWidget = QtWidgets.QTableWidget(self.tab)
@@ -94,25 +97,25 @@ class Ui_MainWindow(object):
         self.lineSearch = QtWidgets.QLineEdit(self.tab)
         self.lineSearch.setGeometry(QtCore.QRect(450, 60, 411, 41))
         self.lineSearch.setStyleSheet("*{\n"
-"font-size: 20px;\n"
-"}")
+                                      "font-size: 20px;\n"
+                                      "}")
         self.lineSearch.setText("")
         self.lineSearch.setObjectName("lineSearch")
         self.groupBox_3 = QtWidgets.QGroupBox(self.tab)
         self.groupBox_3.setGeometry(QtCore.QRect(20, 10, 401, 91))
         self.groupBox_3.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"font-size: 15px;\n"
-"border-radius: 10px;\n"
-"}")
+                                      "color: #ebebeb;\n"
+                                      "border: 1px solid #ebebeb;\n"
+                                      "font-size: 15px;\n"
+                                      "border-radius: 10px;\n"
+                                      "}")
         self.groupBox_3.setObjectName("groupBox_3")
         self.groupBox = QtWidgets.QGroupBox(self.groupBox_3)
         self.groupBox.setGeometry(QtCore.QRect(10, 20, 161, 61))
         self.groupBox.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"border:none;\n"
-"}")
+                                    "color: #ebebeb;\n"
+                                    "border:none;\n"
+                                    "}")
         self.groupBox.setObjectName("groupBox")
         self.radioPens = QtWidgets.QRadioButton(self.groupBox)
         self.radioPens.setGeometry(QtCore.QRect(10, 40, 111, 20))
@@ -123,9 +126,9 @@ class Ui_MainWindow(object):
         self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox_3)
         self.groupBox_2.setGeometry(QtCore.QRect(190, 20, 191, 61))
         self.groupBox_2.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"border:none;\n"
-"}")
+                                      "color: #ebebeb;\n"
+                                      "border:none;\n"
+                                      "}")
         self.groupBox_2.setObjectName("groupBox_2")
         self.radioDate = QtWidgets.QRadioButton(self.groupBox_2)
         self.radioDate.setGeometry(QtCore.QRect(10, 40, 191, 20))
@@ -137,42 +140,42 @@ class Ui_MainWindow(object):
         self.pushChange.setEnabled(False)
         self.pushChange.setGeometry(QtCore.QRect(900, 60, 111, 41))
         self.pushChange.setStyleSheet("*{\n"
-"background:#333;\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"}")
+                                      "background:#333;\n"
+                                      "color: #ebebeb;\n"
+                                      "border: 1px solid #ebebeb;\n"
+                                      "}")
         self.pushChange.setObjectName("pushChange")
         self.pushAdd = QtWidgets.QPushButton(self.tab)
         self.pushAdd.setEnabled(False)
         self.pushAdd.setGeometry(QtCore.QRect(1020, 60, 111, 41))
         self.pushAdd.setStyleSheet("*{\n"
-"background:#333;\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"}")
+                                   "background:#333;\n"
+                                   "color: #ebebeb;\n"
+                                   "border: 1px solid #ebebeb;\n"
+                                   "}")
         self.pushAdd.setObjectName("pushAdd")
         self.pushDelete = QtWidgets.QPushButton(self.tab)
         self.pushDelete.setEnabled(False)
         self.pushDelete.setGeometry(QtCore.QRect(1140, 60, 111, 41))
         self.pushDelete.setStyleSheet("*{\n"
-"background:#333;\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"}")
+                                      "background:#333;\n"
+                                      "color: #ebebeb;\n"
+                                      "border: 1px solid #ebebeb;\n"
+                                      "}")
         self.pushDelete.setObjectName("pushDelete")
         self.label = QtWidgets.QLabel(self.tab)
         self.label.setGeometry(QtCore.QRect(450, 30, 55, 16))
         self.label.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"font-size: 15px;\n"
-"}")
+                                 "color: #ebebeb;\n"
+                                 "font-size: 15px;\n"
+                                 "}")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.tab)
         self.label_2.setGeometry(QtCore.QRect(900, 30, 121, 16))
         self.label_2.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"font-size: 15px;\n"
-"}")
+                                   "color: #ebebeb;\n"
+                                   "font-size: 15px;\n"
+                                   "}")
         self.label_2.setObjectName("label_2")
         self.groupBox_3.raise_()
         self.lineSearch.raise_()
@@ -194,16 +197,16 @@ class Ui_MainWindow(object):
         self.groupBox_4 = QtWidgets.QGroupBox(self.tab_2)
         self.groupBox_4.setGeometry(QtCore.QRect(750, 40, 361, 91))
         self.groupBox_4.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"}")
+                                      "color: #ebebeb;\n"
+                                      "border: 1px solid #ebebeb;\n"
+                                      "}")
         self.groupBox_4.setObjectName("groupBox_4")
         self.groupBox_6 = QtWidgets.QGroupBox(self.groupBox_4)
         self.groupBox_6.setGeometry(QtCore.QRect(10, 20, 331, 51))
         self.groupBox_6.setStyleSheet("*{\n"
-"color: #ebebeb;\n"
-"border:none;\n"
-"}")
+                                      "color: #ebebeb;\n"
+                                      "border:none;\n"
+                                      "}")
         self.groupBox_6.setObjectName("groupBox_6")
         self.radioCol = QtWidgets.QRadioButton(self.groupBox_6)
         self.radioCol.setGeometry(QtCore.QRect(130, 20, 191, 20))
@@ -214,8 +217,8 @@ class Ui_MainWindow(object):
         self.lineSearch_2 = QtWidgets.QLineEdit(self.tab_2)
         self.lineSearch_2.setGeometry(QtCore.QRect(750, 150, 361, 41))
         self.lineSearch_2.setStyleSheet("*{\n"
-"font-size: 20px;\n"
-"}")
+                                        "font-size: 20px;\n"
+                                        "}")
         self.lineSearch_2.setText("")
         self.lineSearch_2.setObjectName("lineSearch_2")
         self.pushSearch_2 = QtWidgets.QPushButton(self.tab_2)
@@ -227,8 +230,8 @@ class Ui_MainWindow(object):
         self.pushExit = QtWidgets.QPushButton(self.centralwidget)
         self.pushExit.setGeometry(QtCore.QRect(1180, 10, 81, 41))
         self.pushExit.setStyleSheet("*{\n"
-"background:#d80ff7;\n"
-"}")
+                                    "background:#d80ff7;\n"
+                                    "}")
         self.pushExit.setIconSize(QtCore.QSize(50, 50))
         self.pushExit.setCheckable(False)
         self.pushExit.setObjectName("pushExit")
@@ -236,15 +239,13 @@ class Ui_MainWindow(object):
         self.pushExport.setEnabled(False)
         self.pushExport.setGeometry(QtCore.QRect(1060, 10, 111, 41))
         self.pushExport.setStyleSheet("*{\n"
-"background:#333;\n"
-"color: #ebebeb;\n"
-"border: 1px solid #ebebeb;\n"
-"}")
+                                      "background:#333;\n"
+                                      "color: #ebebeb;\n"
+                                      "border: 1px solid #ebebeb;\n"
+                                      "}")
         self.pushExport.setObjectName("pushExport")
-        MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
         self.actionfkdjkjg = QtWidgets.QAction(MainWindow)
         self.actionfkdjkjg.setObjectName("actionfkdjkjg")
 
@@ -267,12 +268,15 @@ class Ui_MainWindow(object):
         self.pushDelete.setText(_translate("MainWindow", "Удалить"))
         self.label.setText(_translate("MainWindow", "Поиск"))
         self.label_2.setText(_translate("MainWindow", "Редактирование"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Таблица сотрудников"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(
+            self.tab), _translate("MainWindow", "Таблица сотрудников"))
         self.groupBox_4.setTitle(_translate("MainWindow", "Фильтры"))
         self.groupBox_6.setTitle(_translate("MainWindow", "Сортировка"))
-        self.radioCol.setText(_translate("MainWindow", "По количеству сотрудников"))
+        self.radioCol.setText(_translate(
+            "MainWindow", "По количеству сотрудников"))
         self.radioAlf_2.setText(_translate("MainWindow", "По алфавиту"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Таблица подразделений"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(
+            self.tab_2), _translate("MainWindow", "Таблица подразделений"))
         self.pushExit.setText(_translate("MainWindow", "Выход"))
         self.pushExport.setText(_translate("MainWindow", "Экспорт"))
         self.actionfkdjkjg.setText(_translate("MainWindow", "fkdjkjg"))
